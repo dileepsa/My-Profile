@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { TESTIMONIALS } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { styles } from "../styles";
-import { cn } from "../utils/lib";
-import { fadeIn, textVariant } from "../utils/motion";
+import { TESTIMONIALS } from '../constants';
+import { SectionWrapper } from '../hoc';
+import { styles } from '../styles';
+import { cn } from '../utils/lib';
+import { fadeIn, textVariant } from '../utils/motion';
 
 type FeedbackCardProps = {
   index: number;
@@ -25,7 +25,7 @@ const FeedbackCard = ({
   image,
 }: FeedbackCardProps) => (
   <motion.div
-    variants={fadeIn("", "spring", index * 0.5, 0.75)}
+    variants={fadeIn('', 'spring', index * 0.5, 0.75)}
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
   >
     {/* Quote " */}
@@ -65,7 +65,7 @@ export const Feedbacks = () => {
         <div
           className={cn(
             styles.padding,
-            "bg-tertiary rounded-2xl min-h-[300px]"
+            'bg-tertiary rounded-2xl min-h-[300px]'
           )}
         >
           {/* Title */}
@@ -76,13 +76,13 @@ export const Feedbacks = () => {
         </div>
 
         {/* Feedback Card */}
-        <div
+        {/* <div
           className={cn(styles.paddingX, "-mt-20 pb-14 flex flex-wrap gap-7")}
         >
           {TESTIMONIALS.map((testimonial, i) => (
             <FeedbackCard key={testimonial.name} index={i} {...testimonial} />
           ))}
-        </div>
+        </div> */}
       </div>
     </SectionWrapper>
   );

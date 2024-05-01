@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { ComputersCanvas } from "./canvas";
-import { styles } from "../styles";
-import { cn } from "../utils/lib";
+import { ComputersCanvas } from './canvas';
+import { styles } from '../styles';
+import { cn } from '../utils/lib';
 
 // Hero
 export const Hero = () => {
@@ -11,7 +11,7 @@ export const Hero = () => {
       <div
         className={cn(
           styles.paddingX,
-          "absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5",
+          'absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5'
         )}
       >
         {/* Title */}
@@ -22,12 +22,12 @@ export const Hero = () => {
 
         {/* About Me */}
         <div>
-          <h1 className={cn(styles.heroHeadText, "text-white")}>
-            Hi, I'm <span className="text-[#915eff]">Shubham</span>
+          <h1 className={cn(styles.heroHeadText, 'text-white')}>
+            Hi, I'm <span className="text-[#915eff]">Dileep A</span>
           </h1>
-          <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces and web applications
+          <p className={cn(styles.heroSubText, 'mt-2 text-white-100')}>
+            I develop user interfaces, <br className="sm:block hidden" />
+            web applications and Backend servers.
           </p>
         </div>
       </div>
@@ -46,7 +46,7 @@ export const Hero = () => {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: 'loop',
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />

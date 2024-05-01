@@ -1,12 +1,12 @@
-import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
+import { Tilt } from 'react-tilt';
+import { motion } from 'framer-motion';
 
-import { github, preview } from "../assets";
-import { PROJECTS } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { styles } from "../styles";
-import { cn } from "../utils/lib";
-import { fadeIn, textVariant } from "../utils/motion";
+import { github, preview } from '../assets';
+import { PROJECTS } from '../constants';
+import { SectionWrapper } from '../hoc';
+import { styles } from '../styles';
+import { cn } from '../utils/lib';
+import { fadeIn, textVariant } from '../utils/motion';
 
 type ProjectCardProps = (typeof PROJECTS)[number] & {
   index: number;
@@ -22,7 +22,7 @@ const ProjectCard = ({
   source_code_link,
   live_site_link,
 }: ProjectCardProps) => (
-  <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+  <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
     <Tilt
       options={{
         max: 45,
@@ -42,7 +42,7 @@ const ProjectCard = ({
         {/* Live Site */}
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
-            onClick={() => window.open(live_site_link, "_blank", "noreferrer")}
+            onClick={() => window.open(live_site_link, '_blank', 'noreferrer')}
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <img
@@ -56,7 +56,7 @@ const ProjectCard = ({
           {/* Github */}
           <div
             onClick={() =>
-              window.open(source_code_link, "_blank", "noreferrer")
+              window.open(source_code_link, '_blank', 'noreferrer')
             }
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ml-2"
           >
@@ -79,7 +79,7 @@ const ProjectCard = ({
       {/* Work Tag */}
       <div className="mt-4 flex flex-wrap gap-2">
         {tags.map((tag, tagIdx) => (
-          <p key={`Tag-${tagIdx}`} className={cn(tag.color, "text-[14px]")}>
+          <p key={`Tag-${tagIdx}`} className={cn(tag.color, 'text-[14px]')}>
             #{tag.name}
           </p>
         ))}
@@ -102,7 +102,7 @@ export const Works = () => {
         {/* About */}
         <div className="w-full flex">
           <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
+            variants={fadeIn('', '', 0.1, 1)}
             className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
           >
             Following projects showcases my skills and experience through

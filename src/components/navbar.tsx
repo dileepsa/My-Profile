@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-import { logo, menu, close } from "../assets";
-import { NAV_LINKS } from "../constants";
-import { styles } from "../styles";
-import { cn } from "../utils/lib";
+import { logo, menu, close } from '../assets';
+import { NAV_LINKS } from '../constants';
+import { styles } from '../styles';
+import { cn } from '../utils/lib';
 
 type NavbarProps = {
   hide: boolean;
@@ -13,7 +13,7 @@ type NavbarProps = {
 // Navbar
 export const Navbar = ({ hide }: NavbarProps) => {
   // state variables
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(false);
 
@@ -26,17 +26,17 @@ export const Navbar = ({ hide }: NavbarProps) => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <nav
       className={cn(
         styles.paddingX,
-        "w-full flex items-center py-5 fixed top-0 z-20 bg-primary",
-        isAtBottom || hide ? "mt-0" : "mt-20"
+        'w-full flex items-center py-5 fixed top-0 z-20 bg-primary',
+        isAtBottom || hide ? 'mt-0' : 'mt-20'
       )}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -45,13 +45,13 @@ export const Navbar = ({ hide }: NavbarProps) => {
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
-            setActive("");
+            setActive('');
             window.scrollTo(0, 0);
           }}
         >
           <img src={logo} alt="Logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Shubham&nbsp;<span className="sm:block hidden">| Developer</span>
+            Dileep A&nbsp;<span className="sm:block hidden">| Developer</span>
           </p>
         </Link>
 
@@ -61,8 +61,8 @@ export const Navbar = ({ hide }: NavbarProps) => {
             <li
               key={link.id}
               className={cn(
-                active === link.title ? "text-white" : "text-secondary",
-                "hover:text-white text-[18px] font-medium cursor-pointer"
+                active === link.title ? 'text-white' : 'text-secondary',
+                'hover:text-white text-[18px] font-medium cursor-pointer'
               )}
               onClick={() => !link.link && setActive(link.title)}
             >
@@ -88,8 +88,8 @@ export const Navbar = ({ hide }: NavbarProps) => {
 
           <div
             className={cn(
-              !toggle ? "hidden" : "flex",
-              "p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl"
+              !toggle ? 'hidden' : 'flex',
+              'p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl'
             )}
           >
             {/* Nav Links (Mobile) */}
@@ -98,8 +98,8 @@ export const Navbar = ({ hide }: NavbarProps) => {
                 <li
                   key={link.id}
                   className={cn(
-                    active === link.title ? "text-white" : "text-secondary",
-                    "font-poppins font-medium cursor-pointer text-[16px]"
+                    active === link.title ? 'text-white' : 'text-secondary',
+                    'font-poppins font-medium cursor-pointer text-[16px]'
                   )}
                   onClick={() => {
                     !link.link && setToggle(!toggle);

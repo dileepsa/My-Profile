@@ -52,7 +52,7 @@ export const NAV_LINKS = [
   {
     id: "source-code",
     title: "Source Code",
-    link: "http://www.github.com/sanidhyy/3d-portfolio/",
+    link: "",
   },
 ] as const;
 
@@ -139,7 +139,7 @@ export const EXPERIENCES = [
     company_name: "Thoughtworks",
     icon: thoughtworks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "July 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -152,7 +152,7 @@ export const EXPERIENCES = [
     company_name: "Thoughtworks",
     icon: thoughtworks,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "July 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -165,7 +165,7 @@ export const EXPERIENCES = [
     company_name: "Thoughtworks",
     icon: thoughtworks,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Oct 2022 - May 2023",
     points: [
       "Developing and maintaining applications using Java spring boot and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -178,7 +178,20 @@ export const EXPERIENCES = [
     company_name: "Thoughtworks",
     icon: thoughtworks,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Oct 2022 - May 2023",
+    points: [
+      "Developing and maintaining services C#.net and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Intern",
+    company_name: "Thoughtworks",
+    icon: thoughtworks,
+    iconBg: "#E6DEDD",
+    date: "Feb 2021 - May 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -192,27 +205,11 @@ export const EXPERIENCES = [
 export const TESTIMONIALS = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Thanks a lot Dileep for all the great work you are doing in Lenovo - VE. You are an all-rounder in the team and is capable to complete any task irrespective of application development or Infrastructure issues. Someone who never says a \"NO\" to any sort of work. Way to go, all the best !",
+    name: "ArunKumar nehru kochi santharaman",
+    designation: "Lead Consultant",
+    company: "Thoughtworks",
     image: user1,
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: user2,
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: user3,
   },
 ] as const;
 
@@ -284,23 +281,8 @@ export const PROJECTS = [
 
 export const SOCIALS = [
   {
-    name: "YouTube",
-    icon: youtube,
-    link: "https://www.youtube.com/@OPGAMER.",
-  },
-  {
-    name: "Linkedin",
-    icon: linkedin,
-    link: "https://www.linkedin.com/in/sanidhyy",
-  },
-  {
-    name: "Twitter",
-    icon: twitter,
-    link: "https://twitter.com/TechnicalShubam",
-  },
-  {
     name: "GitHub",
     icon: github,
-    link: "https://github.com/sanidhyy",
+    link: "https://github.com/dileepsa",
   },
 ] as const;
