@@ -4,7 +4,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -17,12 +16,6 @@ import {
   figma,
   docker,
   cashflow,
-  user1,
-  user2,
-  user3,
-  youtube,
-  linkedin,
-  twitter,
   github,
   dotnet,
   csharp,
@@ -43,17 +36,7 @@ export const NAV_LINKS = [
     id: "work",
     title: "Work",
     link: null,
-  },
-  {
-    id: "contact",
-    title: "Contact",
-    link: null,
-  },
-  {
-    id: "source-code",
-    title: "Source Code",
-    link: "",
-  },
+  }
 ] as const;
 
 // Services
@@ -69,10 +52,6 @@ export const SERVICES = [
   {
     title: "Backend Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ] as const;
 
@@ -135,81 +114,43 @@ export const TECHNOLOGIES = [
 // Experiences
 export const EXPERIENCES = [
   {
-    title: "React.js Developer",
+    title: "Consultant",
     company_name: "Thoughtworks",
     icon: thoughtworks,
     iconBg: "#383E56",
     date: "July 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked as a consultant developer delivering scalable solutions in FinTech and IoT domains.",
+      "Built responsive web interfaces using React and mobile apps using React Native for cross-platform delivery.",
+      "Developed backend services and APIs using Java and Spring Boot, ensuring secure and efficient data handling.",
+      "Collaborated across full-stack teams to deliver end-to-end features, from UI to backend integration.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Thoughtworks",
-    icon: thoughtworks,
-    iconBg: "#E6DEDD",
-    date: "July 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Backend Developer",
-    company_name: "Thoughtworks",
-    icon: thoughtworks,
-    iconBg: "#383E56",
-    date: "Oct 2022 - May 2023",
-    points: [
-      "Developing and maintaining applications using Java spring boot and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "C#.Net Developer",
+    title: "Grad consultant",
     company_name: "Thoughtworks",
     icon: thoughtworks,
     iconBg: "#E6DEDD",
     date: "Oct 2022 - May 2023",
     points: [
-      "Developing and maintaining services C#.net and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contributed to a C# .NET project, actively participating in feature development and code integration.",
+      "Built an automated test suite using Python to validate application behavior and ensure reliability.",
+      "Improved overall test coverage by designing and implementing test cases aligned with new feature development.",
+      "Integrated automated tests into the CI pipeline, enhancing early bug detection and deployment confidence.",
     ],
   },
   {
-    title: "Intern",
+    title: "STEP Intern",
     company_name: "Thoughtworks",
     icon: thoughtworks,
     iconBg: "#E6DEDD",
     date: "Feb 2021 - May 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and deployed full-stack applications using JavaScript and Node.js.",
+      "Developed RESTful APIs with Express.js and integrated them with front-end clients.",
+      "Exposed to various software development methodologies, including Agile and Scrum.",
+      "Collaborated with devs, testers, and mentors to deliver high-quality software solutions.",
     ],
-  },
-] as const;
-
-// Testimonials
-export const TESTIMONIALS = [
-  {
-    testimonial:
-      "Thanks a lot Dileep for all the great work you are doing in Lenovo - VE. You are an all-rounder in the team and is capable to complete any task irrespective of application development or Infrastructure issues. Someone who never says a \"NO\" to any sort of work. Way to go, all the best !",
-    name: "ArunKumar nehru kochi santharaman",
-    designation: "Lead Consultant",
-    company: "Thoughtworks",
-    image: user1,
   },
 ] as const;
 

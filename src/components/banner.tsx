@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-import { close, bulb } from "../assets";
+import { close, bulb } from '../assets';
 
 type BannerProps = {
   hide: boolean;
   setHide: (hide: boolean) => void;
 };
 
-const BANNER_KEY = "hide-banner";
+const BANNER_KEY = 'hide-banner';
 
 const Banner = ({ hide, setHide }: BannerProps) => {
   useEffect(() => {
@@ -25,7 +25,7 @@ const Banner = ({ hide, setHide }: BannerProps) => {
 
   const handleBannerClose = () => {
     setHide(true);
-    localStorage.setItem(BANNER_KEY, "1");
+    localStorage.setItem(BANNER_KEY, '1');
   };
 
   return (
@@ -33,7 +33,7 @@ const Banner = ({ hide, setHide }: BannerProps) => {
       id="sticky-banner"
       tabIndex={-1}
       className={`${
-        hide ? "hidden" : "block"
+        hide ? 'hidden' : 'block'
       } absolute h-20 top-0 left-0 z-50 flex justify-between w-full p-4 bg-primary shadow-md opacity-[0.98]`}
     >
       <div className="flex items-center mx-auto">
@@ -49,9 +49,9 @@ const Banner = ({ hide, setHide }: BannerProps) => {
             <span className="sr-only">Light bulb</span>
           </span>
           <span>
-            Did you like this portfolio. Check out my{" "}
+            Did you like this portfolio. Check out my{' '}
             <Link
-              to="https://www.sanidhy.me"
+              to=""
               target="_blank"
               rel="noreferrer noopener"
               className="inline font-medium text-blue-600 underline underline-offset-2 decoration-600 hover:no-underline"

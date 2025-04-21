@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import {
   About,
   Contact,
@@ -10,9 +10,9 @@ import {
   Tech,
   Works,
   StarsCanvas,
-} from "./components";
-import Banner from "./components/banner";
-import Footer from "./components/footer";
+} from './components';
+import Banner from './components/banner';
+import Footer from './components/footer';
 
 // App
 const App = () => {
@@ -30,14 +30,6 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
-
-        {/* Contact */}
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
-        <Footer />
       </div>
     </BrowserRouter>
   );

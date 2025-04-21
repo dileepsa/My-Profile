@@ -54,11 +54,14 @@ export const About = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className="empty-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I'm a skilled website developer with experience in TypeScript,
-          Javascript and Java, and expertise in frameworks like React, Node.js,
-          Spring boot. I'm a quick learner and collaborate closely with clients
-          to create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
+          A curious and passionate software developer with hands-on experience
+          across web, mobile, and backend development. I’ve worked with a wide
+          range of technologies including JavaScript, React, React Native,
+          Node.js, Java, Spring Boot, and Python. <br />I enjoy learning new
+          technologies, solving real-world problems, and working in
+          collaborative, agile teams. Whether it’s designing APIs, building
+          interactive UIs, or automating tests, I’m all about writing clean code
+          that makes an impact.
         </motion.p>
 
         {/* Service Card */}
